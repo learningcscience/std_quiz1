@@ -81,13 +81,15 @@ def fibonacci(n):
 #assigned: mahendra
 def gcd(a, b):
     if a<b:
-       i=a
+        i=a
     else:
         i=b
     for i in range(i,0,-1):
         if a%i==0 and b%i==0:
             return i
         
+
+
 
 
 #function to find the LCM of two numbers
