@@ -2,17 +2,17 @@
 #assigned: mohan
 def is_prime(n):
     if n <= 1:
-        print("Not Prime")
+        return False
         
 
     i = 2
     while i * i <= n:
         if n % i == 0:
-            print("Not Prime")
+            return False
         
         i += 1
 
-    print("Prime")
+    return True
 
 
 #function to rotate a given string n times
@@ -54,23 +54,16 @@ def factorial(n):
 #function to find the nth Fibonacci number
 #assigned: mohan
 def fibonacci(n):
-     if n == 1:
-    print(1)
-   else:
-    print(1)
-    a = 1
-    b = 1
-    c = 1
-    i = 1
-
-    while i < n:
-        b=c
-        c = a + b
-        a = b
+    if n <= 0:
+        print("Incorrect input")
         
-        i += 1
-
-        print(b)
+    elif n == 1:
+        return 0
+    elif n == 2:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+    
 
 
 
@@ -142,7 +135,7 @@ def reverse_string(s):
    for i in s:
        str = i + str
 
-print(f"the reverse of the string {s} is str{str}")
+   print(f"the reverse of the string {s} is str{str}")
     
 
 
