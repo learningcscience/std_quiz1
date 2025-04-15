@@ -92,7 +92,6 @@ def gcd(a, b):
 #function to find the LCM of two numbers
 #assigned: bastola
 def lcm(a, b):
-    
     larger = max(a,b)
     
     while True:
@@ -142,7 +141,7 @@ def reverse_string(s):
    for i in s:
        str = i + str
 
-print(f"the reverse of the string {s} is str{str}")
+   print(f"The reverse of {s} is {str}")
     
 
 
