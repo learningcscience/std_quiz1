@@ -34,7 +34,24 @@ def factorial(n):
 #function to find the nth Fibonacci number
 #assigned: mohan
 def fibonacci(n):
-    pass
+     if n == 1:
+    print(1)
+   else:
+    print(1)
+    a = 1
+    b = 1
+    c = 1
+    i = 1
+
+    while i < n:
+        b=c
+        c = a + b
+        a = b
+        
+        i += 1
+
+        print(b)
+
 
 
 #function to find the GCD of two numbers
