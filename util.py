@@ -7,7 +7,6 @@ def is_prime(n):
 #function to rotate a given string n times
 #assigned: mahendra
 def rotate_string(s, n):
- 
     s = list(s)  
     t= ""
     r = ""  
