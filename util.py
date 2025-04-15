@@ -1,21 +1,18 @@
 #function to find if a given number is prime or not
 #assigned: mohan
 def is_prime(n):
-    def is_prime(n):
- 
-    if n < = 1:
-      print("Not Prime")
-    
-    i=2
+    if n <= 1:
+        print("Not Prime")
+        
 
-    while i * i <=n:
-      if n %i == 0:
-          
-          print("Not Prime")
-          
-    i+=1
-    else:
-      print("Prime")
+    i = 2
+    while i * i <= n:
+        if n % i == 0:
+            print("Not Prime")
+        
+        i += 1
+
+    print("Prime")
 
 
 #function to rotate a given string n times
