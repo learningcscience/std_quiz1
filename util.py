@@ -1,7 +1,21 @@
 #function to find if a given number is prime or not
 #assigned: mohan
 def is_prime(n):
-    pass
+    def is_prime(n):
+ 
+    if n < = 1:
+      print("Not Prime")
+    
+    i=2
+
+    while i * i <=n:
+      if n %i == 0:
+          
+          print("Not Prime")
+          
+    i+=1
+    else:
+      print("Prime")
 
 
 #function to rotate a given string n times
@@ -20,7 +34,24 @@ def factorial(n):
 #function to find the nth Fibonacci number
 #assigned: mohan
 def fibonacci(n):
-    pass
+     if n == 1:
+    print(1)
+   else:
+    print(1)
+    a = 1
+    b = 1
+    c = 1
+    i = 1
+
+    while i < n:
+        b=c
+        c = a + b
+        a = b
+        
+        i += 1
+
+        print(b)
+
 
 
 #function to find the GCD of two numbers
@@ -38,7 +69,17 @@ def lcm(a, b):
 #function to find the square root of a given number
 #assigned: mohan
 def square_root(n):
-    pass
+    
+    i = 1
+
+    while i * i <= n:
+        if i * i == n:
+          print("Square root of", n, "is", i)
+        i += 1
+    
+
+square_root(64)
+     
 
 
 #function to find the sum of digits of a given number
